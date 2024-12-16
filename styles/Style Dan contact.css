@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+:root {
+    --maincolor: #001A6E;
+    --secondcolor: #E1FFBB;
+    --terciarcolor: #009990;
+    --hovercolor: #074799;
+    --titlefont: "Oswald", sans-serif;
+    --paragraphfont: "IBM Plex Sans", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--maincolor);
+    color: var(--secondcolor);
+    background-image: linear-gradient(rgba(39, 127, 245, 0.8),rgba(0, 40, 255, 0.8) ), url(../assets/1624234380593.jpg);
+}
+
+.cabecalho {
+    padding: 2% 7% 0% 40%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+}
+
+.cabecalho__menu__links {
+    text-decoration: none;
+    color: var(--secondcolor);
+    font-family: var(--paragraphfont);
+    font-weight: 400;
+    font-size: 20px
+}
+.cabecalho__menu__links:hover{
+    color: var(--terciarcolor);
+    font-size: 20.3px;
+}
+
+.logods {
+    width: 130px;
+    position: relative;
+    right: 70%;
+    bottom: 70px;
+}
+
+.informations {
+    padding: 10% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.informations__content {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.informations__content__title {
+    font-family: var(--titlefont);
+    font-size: 36px;
+    font-weight: 500;
+}
+
+
+.informations__paragraph {
+    font-family: var(--paragraphfont);
+    font-size: 25px;
+}
+
+.informations__links {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   gap: 20px;
+   
+
+}
+
+.informations__links__button {
+    text-decoration: none;
+    font-family: var(--paragraphfont);
+    font-size: 20px;
+    color: var(--secondcolor);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--secondcolor);
+    width: 250px;
+    padding: 10px;
+    text-align: center;
+    gap: 8px;
+    border-radius: 20px;
+    
+}
+
+.informations__links__button:hover {
+    background-color: var(--hovercolor);
+}
+
+.rodape {
+    font-family: var(--paragraphfont);
+    font-weight: 700;
+    text-align: center;
+    background-color: var(--secondcolor);
+    color: var(--maincolor);
+    padding: 24px;
+    font-size: 20px;
+
+}
+
